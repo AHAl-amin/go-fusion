@@ -26,10 +26,10 @@ export default function LayoutContent({
           mixBlendMode: "exclusion",
         }}
       />
-      <header className="bg-black sticky top-0 z-50">
+      <header className="sticky top-0 z-50  bg-gradient-to-l from-[#a04529] to-[#459447] opacity-90">
         <Header />
       </header>
-      <main>{children}</main>
+      <main className="bg-gradient-to-tl from-[#a04529] to-[#459447]">{children}</main>
       <Footer />
     </>
   );

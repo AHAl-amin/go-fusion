@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohin Uddin",
+  title: "Toki Osmani",
   description: "Professional Web Developer",
 };
 

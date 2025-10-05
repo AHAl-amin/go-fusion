@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectType> = ({
         onMouseEnter={() => videoRef.current?.play()}
         onMouseLeave={() => videoRef.current?.pause()}
       >
-        <div className="bg-gradient-to-b from-[#1A1A1A] to-[#080808] p-px rounded-2xl overflow-hidden">
+        <div className="p-px rounded-2xl overflow-hidden">
           {/* <video
             ref={videoRef}
             className="w-full rounded-t-2xl"
@@ -125,7 +125,7 @@ const Project: React.FC = () => {
   ];
 
   return (
-    <div id="project" className="bg-black">
+    <div id="project" className="">
       <div className="container mx-auto flex max-sm:flex-col max-sm:items-start max-sm:gap-5 items-end justify-between max-xl:px-5">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6  max-xl:text-[38px] text-[60px]  text-white">
           Turning Vision{" "}

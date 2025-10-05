@@ -11,7 +11,7 @@ export default function Header() {
     <header
       className="sticky top-0 z-40 w-full border-b 
         
-          border-white/10 bg-black/50 text-white
+          border-white/10   text-white
           
        backdrop-blur-xl"
     >

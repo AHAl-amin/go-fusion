@@ -85,7 +85,7 @@ const About: React.FC = () => {
   return (
     <div
       id="about"
-      className="flex items-center justify-center min-h-screen bg-black text-white p-4 font-inter"
+      className="flex items-center justify-center min-h-screen  text-white p-4 font-inter"
     >
       <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto text-center">
         <div className=" uppercase font-semibold text-2xl text-white tracking-wide mb-2">

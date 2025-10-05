@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       className="w-full 
-         bg-black text-[#f5f5f7]"
+          bg-gradient-to-l from-[#a04529] to-[#459447] opacity-95 text-[#f5f5f7]"
     >
       <div className="bg-gradient-to-t from-black/30 to-transparent">
         <div className="container mx-auto   gap-10 px-4 py-12 flex justify-between md:flex-row flex-col">
