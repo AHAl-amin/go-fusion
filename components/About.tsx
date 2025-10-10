@@ -36,7 +36,7 @@ interface CounterProps {
 
 const Counter: React.FC<CounterProps> = ({ from, to, inView, suffix = "" }) => {
   const [count, setCount] = useState(from);
-  const duration = 2000; // Animation duration in ms
+  const duration = 2000;
 
   useEffect(() => {
     if (!inView) {
@@ -134,7 +134,7 @@ const About: React.FC = () => {
             <div className="text-5xl font-extrabold text-[#0f7238]  mb-2">
               <Counter from={0} to={89} inView={inView4} suffix="+" />
             </div>
-            <h2 className="text-lg font-bold mb-1">Top Rated Freelancers</h2>
+            <h2 className="text-lg font-bold mb-1">Top Rated Freelancers two</h2>
           </div>
         </div>
       </div>
