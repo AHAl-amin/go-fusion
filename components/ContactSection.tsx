@@ -1,7 +1,14 @@
+
+
+
+"use client";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
+
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 
 const ContactSection = () => {
   return (
@@ -18,16 +25,39 @@ const ContactSection = () => {
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/90 -z-10"></div>
+      <div className="absolute inset-0 bg-transparent -z-10"></div>
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 py-16 flex flex-col lg:flex-row justify-between items-start lg:items-stretch gap-12 lg:gap-16 min-h-screen">
         {/* Left Content */}
         <div className="flex flex-col justify-center lg:justify-between gap-8 lg:gap-12 lg:flex-1 text-white">
-          <h1 className="text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-black leading-tight">
-            Ready? <br />
-            <span className="">Let&apos;s Talk</span>
-          </h1>
+
+          <div className="w-full lg:justify-start ">
+            <div className="flex justify-center items-center">
+              <h1 className="text-4xl sm:text-6xl lg:text-6xl xl:text-8xl  font-black leading-tight">
+                Ready? <br />
+                <span>Let&apos;s Talk</span>
+              </h1>
+            </div>
+            <div className="">
+              <DotLottieReact
+                src="https://lottie.host/6aea4260-27bb-48d0-b71d-0b12ee5bd15e/E2jtFpikEc.lottie"
+                loop
+                autoplay
+                style={{
+                  width: "100%",
+                  height: "100%",
+                 
+                  bottom: "180px",
+                  right: 0,
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          </div>
+
+          {/* Title */}
+
 
           {/* Contact Info + Socials */}
           <div className="flex flex-col sm:flex-row justify-start lg:justify-between items-start sm:items-end gap-6 lg:gap-8">
@@ -36,7 +66,7 @@ const ContactSection = () => {
               to{" "}
               <a
                 className="underline underline-offset-4 text-white hover:text-primary transition-colors"
-                href="mailto:team@aconite.io"
+                href="mailto:tokiusmani@gmail.com"
               >
                 tokiusmani@gmail.com
               </a>
@@ -44,34 +74,21 @@ const ContactSection = () => {
 
             {/* Social Icons */}
             <div className="flex flex-row gap-3 items-center">
-              {/* Telegram */}
-              {/* <a
-                className="flex items-center justify-center size-[48px] lg:size-[54px] bg-white/10 hover:bg-primary rounded-full transition-all duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://t.me/"
-                aria-label="Contact us on Telegram"
-              >
-                <FaTelegram className="w-5 h-5" />
-              </a> */}
-
-              {/* WhatsApp */}
               <a
                 className="flex items-center justify-center size-[48px] lg:size-[54px] bg-white/10 hover:bg-primary rounded-full transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/mohin-uddin00/"
-                aria-label="Contact us on LinkedIn "
+                href="https://www.linkedin.com/in/toki-osmani-60180232a/"
+                aria-label="Contact us on LinkedIn"
               >
                 <FaLinkedin className="w-5 h-5" />
               </a>
 
-              {/* Email */}
               <a
                 className="flex items-center justify-center size-[48px] lg:size-[54px] bg-white/10 hover:bg-primary rounded-full transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="mailto:miintminii@gmail.com"
+                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
                 aria-label="Send us an email"
               >
                 <Mail className="w-5 h-5" />
@@ -81,7 +98,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="w-full max-w-[590px] lg:max-w-none lg:w-[590px] p-6 lg:p-[42px] bg-black/80 backdrop-blur-sm text-white border border-white/20 rounded-lg shadow-2xl">
+        <div className="w-full max-w-[590px] lg:max-w-none lg:w-[590px] p-6 lg:p-[42px] bg-black/50 backdrop-blur-sm text-white border border-white/20 rounded-lg shadow-2xl">
           <form className="flex flex-col gap-8">
             {/* Step Info */}
             <div className="flex flex-col gap-4">
@@ -121,14 +138,14 @@ const ContactSection = () => {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-lg font-medium" htmlFor="website">
+                <label className="text-lg font-medium" htmlFor="description">
                   Description
                 </label>
                 <input
                   id="description"
                   name="description"
                   type="text"
-                  placeholder="Write Your Message"
+                  placeholder="Write your message"
                   className="border-0 border-b-2 border-white/30 placeholder:text-gray-400 w-full outline-none text-base bg-transparent py-3 focus:border-primary transition-colors duration-300"
                 />
               </div>
@@ -166,3 +183,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+

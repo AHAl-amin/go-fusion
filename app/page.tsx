@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Aboutpro from "@/components/Aboutpro";
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
@@ -9,7 +10,7 @@ const page = () => {
   return (
     <div>
       <Hero />
-      <About />
+      <Aboutpro/>
       <Project />
       <Testimonials />
       <ContactSection />

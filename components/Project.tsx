@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectType> = ({
   title,
   description,
   tags,
-  videoSrc,
+
   imgSrc,
   href,
 }) => {

@@ -46,7 +46,7 @@ export default function Footer() {
             <div className="flex gap-3">
               <Link
                 aria-label="Facebook"
-                href="#"
+                href="https://www.facebook.com/TaQee.Osmani.10"
                 className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
               >
                 <Facebook className="h-4 w-4" />
@@ -67,7 +67,7 @@ export default function Footer() {
               </Link>
               <Link
                 aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/mohin-uddin00/"
+                href="https://www.linkedin.com/in/toki-osmani-60180232a/"
                 className="rounded-md bg-[#55555c] text-white shadow-md p-2 "
               >
                 <Linkedin className="h-4 w-4" />
