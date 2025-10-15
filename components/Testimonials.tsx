@@ -18,53 +18,53 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "dina_c_woods",
-    username: "@dina_c_woods",
-    body: "What I love most? He makes every project feel effortless. After several collaborations, he’s become someone I fully trust to just get it right without handholding.",
+    name: "Ariahkay",
+    username: "@Ariahkay",
+    body: " I love the patience that I was provided with during my time working with those individuals.",
     img: Client1, // Use imported image
     image: Client1, // Use imported image
     position: "Client",
-    quote: "What I love most? He makes every project feel effortless. After several collaborations, he’s become someone I fully trust to just get it right without handholding.",
+    quote: "I love the patience that I was provided with during my time working with those individuals.",
   },
   {
     id: 2,
-    name: "jayfettig693",
-    username: "@jayfettig693",
+    name: "brighteto11",
+    username: "@brighteto11",
     body: "I've dealt with developers for years and was admittedly reluctant to deal with someone in the other side of the world, on different time zones, etc. I am so glad that I chose them and can't recommend them high enough. Fantastic.",
     img: Client2,
     image: Client2,
     position: "Client",
-    quote: "I've dealt with developers for years and was admittedly reluctant to deal with someone in the other side of the world, on different time zones, etc. I am so glad that I chose them and can't recommend them high enough. Fantastic.",
+    quote: "Toki and his team are very professional and punctual. They go above and beyond on making sure they align with your vision and scope of work. Phase one of the project was exception. I’m looking forward to continuing working on this project with them and get to delivery! I would highly recommend their services.",
   },
   {
     id: 3,
-    name: "kyprianou",
-    username: "@kyprianou",
+    name: "hegoode",
+    username: "@hegoode",
     body: "Each project benefits from his unique blend of creativity and technical skill, resulting in sites that not only look fantastic but also perform flawlessly. His commitment and attention to detail always ensure the final product goes beyond what I imagined.",
     img: Client3,
     image: Client3,
     position: "Client",
-    quote: "Each project benefits from his unique blend of creativity and technical skill, resulting in sites that not only look fantastic but also perform flawlessly. His commitment and attention to detail always ensure the final product goes beyond what I imagined.",
+    quote: " Toki’s team is very responsive. I work in Eastern timezone and found them easy to reach to answer my questions I had, at times that were convenient to my schedule, including weekends. We extended my original timeline to ensure that everything I wanted was done the way I wanted it. They were understanding and cooperative with the changes and shifting timelines.",
   },
   {
     id: 4,
-    name: "Hossian0",
-    username: "@Hossian0",
+    name: "maxcam91043",
+    username: "@maxcam91043",
     body: "This is not our first project together, and there’s a reason I came back Mohin and his team deliver. Every milestone is handled with care, creativity, and precision. We’re almost at the finish line, and I already know the outcome will be something to be proud of.",
     img: Client4,
     image: Client4,
     position: "Client",
-    quote: "This is not our first project together, and there’s a reason I came back Mohin and his team deliver. Every milestone is handled with care, creativity, and precision. We’re almost at the finish line, and I already know the outcome will be something to be proud of.",
+    quote: " MD Toki and his team were exceptional to work with. They delivered my website project efficiently and even ahead of schedule. Their attention to details and willingness to go above and beyond made the whole process seamless. If you need a website done, look no further. Highly recommended. – Max",
   },
   {
     id: 5,
-    name: "Ali_mounji",
-    username: "@Ali_mounji",
+    name: "sabero1",
+    username: "@sabero1",
     body: "Very satisfied with how professional and fast Mihads team is! Did a great piece of work in relatively short time.",
     img: Client5,
     image: Client5,
     position: "Client",
-    quote: "Very satisfied with how professional and fast Mihads team is! Did a great piece of work in relatively short time.",
+    quote: " It is really awesome to work with you guys. I’m really Happy with the 10 pages Website. My next work will go to you. Really really good.",
   },
 ];
 
@@ -125,7 +125,7 @@ const Testimonials = () => {
   return (
     <div  id="testimonial" className="py-16 px-4 " >
       <div className="max-w-[165vh] mx-auto">
-        <div className="relative z-10 w-full text-center mb-12">
+        <div className="relative z-10 w-full text-center mb-4">
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-200 via-orange-300 to-[#195022cb] text-transparent bg-clip-text dark:text-white mb-2">
             What Our Clients Say
           </h2>
@@ -135,7 +135,7 @@ const Testimonials = () => {
         </div>
 
         <div className="relative">
-          <div className="relative h-[500px] flex items-center justify-center overflow-hidden perspective-1000">
+          <div className="relative h-[580px] flex items-center justify-center overflow-hidden perspective-1000">
             <div className="absolute w-full flex justify-center items-center">
               {testimonials.map((testimonial, index) => {
                 const position = getCardPosition(index);
@@ -262,7 +262,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          <div className="flex justify-center mt-8 gap-4">
+          <div className="flex justify-center  gap-4">
             <button
               onClick={handlePrev}
               className="w-12 h-12 rounded-full text-white flex items-center justify-center bg-[#624a04] hover:bg-[#4d3b06] border border-orange-100 transition-colors duration-300 disabled:opacity-50 cursor-pointer"

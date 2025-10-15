@@ -68,7 +68,7 @@ const ContactSection = () => {
                 className="underline underline-offset-4 text-white hover:text-primary transition-colors"
                 href="mailto:tokiusmani@gmail.com"
               >
-                tokiusmani@gmail.com
+                gofusiion@gmail.com
               </a>
             </span>
 
