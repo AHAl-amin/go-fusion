@@ -4,7 +4,7 @@
 import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
 import ImageSport1 from "../public/images/project-img/sport1.png";
-import ImageCar1 from "../public/images/project-img/car1.jpg";
+import ImageCar1 from "../public/images/project-img/arisha.png";
 import ImageGenesis1 from "../public/images/project-img/genesis1.png";
 import ImageNevefold1 from "../public/images/project-img/nevafold1.png";
 
@@ -34,6 +34,7 @@ const ProjectCard: React.FC<ProjectType> = ({
     <div className="mb-5">
       <a
         href={href}
+          target="_blank"
         className="bg-[#080808] rounded-2xl relative overflow-hidden group"
         onMouseEnter={() => videoRef.current?.play()}
         onMouseLeave={() => videoRef.current?.pause()}
@@ -86,28 +87,31 @@ const ProjectCard: React.FC<ProjectType> = ({
 const Project: React.FC = () => {
   const projects: ProjectType[] = [
     {
-      title: "SportVerse",
-      description:
-        "A platform for bowling enthusiasts: track performance, get expert coaching, exclusive content, and join a vibrant community.",
+       title: "Ek Agency",
+     description:
+      "We partner with forward-thinking brands to craft bold experiences that resonate, convert and scale. From branding and UI/UX design to web development and performance optimisation, our team blends creative vision with technical expertise. By combining data-driven insights, seamless execution and continuous refinement, we help clients build meaningful connections and drive measurable impact. Let us transform your ideas into digital realities that not only look exceptional but perform brilliantly.",
       tags: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
       videoSrc: "/videos/break-a-leg-intro.mp4",
       imgSrc: ImageSport1,
      href: "https://ekagency.jvai.site/",
     },
     {
-      title: "RentCars",
-      description:
-        "A fun soundboard app with hilarious, toilet-themed sound effects for pranks and laughs.",
+      title: "Ariah's World",
+     description:
+      "Ariah’s World is a holistic beauty and wellness sanctuary that celebrates the divine feminine through ritual-infused products and intentional self-care. Every creation is designed to nurture healing energy, elevate confidence, and help women reconnect with their inner power. Discover a world where beauty becomes a spiritual journey of love, light, and transformation",
       tags: ["Python", "React", "TensorFlow", "PostgreSQL", "D3.js"],
       videoSrc: "/videos/break-a-leg-intro.mp4",
       imgSrc: ImageCar1,
       
        href: "https://ariahsworld.com/",
+
+     
+   
     },
     {
       title: "Genesis",
-      description:
-        "A mobile app to help users manage and track their health information.",
+       description:
+      "Genesis is a next-generation AI platform built to transform the way creators, developers, and businesses harness artificial intelligence. From generative art and digital media to smart automation, it redefines what’s possible through cutting-edge machine learning. Experience a seamless fusion of creativity and technology that drives ideas into reality.",
       tags: ["React Native", "Firebase", "Redux", "Node.js"],
       videoSrc: "/videos/break-a-leg-intro.mp4",
       imgSrc: ImageGenesis1,
@@ -115,8 +119,8 @@ const Project: React.FC = () => {
     },
     {
       title: "NevaFold",
-      description:
-        "AI-powered math education platform with a smart tutoring chatbot and instant feedback.",
+       description:
+      " NEVAFOLD is an energetic Australian-based fashion label dedicated to delivering high-quality active and street apparel that lifts your style and vibe. With vibrant colours, advanced fabric technology and ergonomic cuts, each piece is designed for both comfort and bold expression. Whether you’re training, chilling or stepping into the city, NEVAFOLD combines trend-forward aesthetics with performance features and ships worldwide. ",
       tags: ["React Native", "Firebase", "Redux", "Node.js"],
       videoSrc: "/videos/break-a-leg-intro.mp4",
        imgSrc: ImageNevefold1,
